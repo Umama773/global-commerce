@@ -1,0 +1,327 @@
+.main {
+  overflow: hidden;
+}
+.main .main-container .banner {
+  position: relative;
+  background-image: linear-gradient(rgba(11, 60, 101, 0.9), rgba(11, 60, 101, 0.9));
+  width: 100%;
+  height: 85vh;
+}
+.main .main-container .banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .main-container .banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 60, 101, 0.3);
+}
+.main .main-container .banner .banner-content {
+  position: absolute;
+  z-index: 100;
+  color: #ffffff;
+  left: 4%;
+  right: 4%;
+}
+.main .main-container .banner .main-title {
+  line-height: 70px;
+}
+.main .main-container .slider-sec .banner-slider .card {
+  width: 100%;
+  height: 25vh;
+}
+.main .main-container .slider-sec .banner-slider .card img {
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.main .main-container .about {
+  padding-top: 120px;
+}
+.main .main-container .about .image-div {
+  position: relative;
+}
+.main .main-container .services-sec .tab-img img {
+  width: 400px;
+  height: 300px;
+}
+.main .main-container .services-sec .content-wrapper {
+  width: 100%;
+}
+.main .main-container .services-sec .slider-container {
+  overflow: hidden;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.main .main-container .services-sec .slider-container .slider-wrapper {
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  margin-bottom: -20px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+}
+.main .main-container .services-sec .slider-container .slider-wrapper .slider-item {
+  display: inline-flex;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.main .main-container .testimonial .testimonal-img {
+  position: relative;
+}
+.main .main-container .testimonial .testimonal-img .main-testimonal {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.main .main-container .testimonial .testimonal-img .test {
+  position: absolute;
+  z-index: 99;
+  transition: all 1s ease-in-out;
+  animation-name: float-Y;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  width: 70px;
+}
+.main .main-container .testimonial .testimonal-img .test-1 {
+  top: 300px;
+  left: 5px;
+}
+.main .main-container .testimonial .testimonal-img .test-2 {
+  left: 10px;
+  top: 20px;
+}
+.main .main-container .testimonial .testimonal-img .test-3 {
+  right: 50px;
+  top: 10px;
+}
+.main .main-container .testimonial .testimonal-img .test-4 {
+  top: 200px;
+  right: 10px;
+}
+.main .main-container .counters {
+  height: 70vh;
+  background-image: url("https://images.pexels.com/photos/326508/pexels-photo-326508.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+.main .main-container .counters::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 60, 101, 0.3);
+}
+.main .main-container .counters .main-title {
+  z-index: 10;
+}
+.main .main-container .counters .count {
+  border-radius: 50%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 50px 0;
+  width: 70%;
+}
+.main .main-container .team .team-slider .slide img {
+  width: 95%;
+  height: 120px;
+}
+.main .main-container .page-banner-sec {
+  position: relative;
+  text-align: center;
+}
+.main .main-container .page-banner-sec nav {
+  -webkit-backdrop-filter: unset;
+          backdrop-filter: unset;
+  background: none;
+}
+.main .main-container .page-banner-sec .bg-banner {
+  background-image: url("https://images.pexels.com/photos/5473298/pexels-photo-5473298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: calc(60vh - 64.77px);
+}
+.main .main-container .page-banner-sec::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(60vh - 64.77px);
+  background-color: rgba(11, 60, 101, 0.3);
+  z-index: 2;
+}
+.main .main-container .page-banner-sec .content {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+.main .main-container .page-banner-sec .main-title {
+  z-index: 100;
+}
+.main .main-container .page-banner-sec .breadcrumb-item {
+  color: #ffffff;
+}
+.main .main-container .page-banner-sec .breadcrumb-item::before {
+  color: #ffffff;
+}
+.main .main-container .page-banner-sec .breadcrumb-item.active {
+  color: #109858;
+}
+.main .main-container .page-banner-sec .breadcrumb {
+  justify-content: center;
+}
+.main .main-container .service-single-sec .service-single-img {
+  width: 100%;
+  max-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+.main .main-container .service-single-sec .service-sidebar .sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+}
+.main .main-container .service-single-sec .service-sidebar .sidebar-menu .list-item {
+  margin-bottom: 10px;
+}
+.main .main-container .service-single-sec .service-sidebar .sidebar-menu .list-item .nav-link {
+  background-color: #ADADAD;
+  color: #0B3C65;
+  font-weight: 700;
+  border-radius: 12px;
+  transition: 0.4s;
+}
+.main .main-container .service-single-sec .service-sidebar .sidebar-menu .list-item .nav-link:hover {
+  border-left: 4px solid #0B3C65;
+  border-radius: 3px;
+  color: #0B3C65;
+}
+.main .main-container .service-single-sec .service-sidebar .sidebar-menu .list-item .shap {
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  background-color: #0B3C65;
+  padding: 28px 40px;
+}
+.main .main-container .bg-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+}
+.main .main-container .info-detail {
+  height: 100%;
+}
+.main .main-container .info-detail .info i {
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #0B3C65;
+  color: #ffffff;
+}
+.main .main-container select,
+.main .main-container input,
+.main .main-container textarea {
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 1px solid var(--black);
+  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+}
+.main footer .title {
+  font-weight: 900;
+  letter-spacing: 9px;
+}
+.main footer .social-icon .icon {
+  font-size: 24px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .main .main-container .banner {
+    height: 90vh;
+  }
+  .main .main-container .banner .main-title {
+    line-height: 100%;
+  }
+  .main .main-container .banner .banner-content {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .main .main-container .services-sec img {
+    padding: 50px 0;
+  }
+  .main .main-container .counters .count {
+    padding: 20px 0;
+  }
+  .main .main-container .testimonial .testimonal-img {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 426px) {
+  .main .main-container .banner {
+    height: 70vh;
+  }
+  .main .main-container .default-sec {
+    padding: 40px 0;
+  }
+  .main .main-container .page-banner-sec .content {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 376px) {
+  .main .main-container .banner {
+    height: 60vh;
+  }
+  .main .main-container .banner .banner-content {
+    padding-top: 60px;
+  }
+  .main .main-container .page-banner-sec .content {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .main .main-container .counters {
+    height: 50vh;
+  }
+  .main .main-container .counters .count {
+    padding: 10px;
+    width: 85%;
+  }
+  .main .main-container .banner .main-title {
+    line-height: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */

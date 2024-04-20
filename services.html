@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Commerce</title>
+
+  <link rel="shortcut icon" href="./assest/media/images/icon-logo.png" type="image/x-icon">
+
+  <!-- LINKS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./assest/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+  <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assest/scss/style.css">
+  <link rel="stylesheet" href="./assest/css/custom.css">
+  <link rel="stylesheet" href="./assest/css/nav.css">
+</head>
+<body>
+  <div class="main">
+    <nav id="navbar" class="fixed-top">
+        <div class="wrapper">
+          <div class="logo">
+            <img src="./assest/media/images/logo.png" alt="">
+          </div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="navbarbtn close-btn"><i class="bi bi-x"></i></label>
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li>
+              <a href="services.html" class="nav-link desktop-item">Services <i class="bi bi-chevron-down"></i></a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item ">Services <i class="bi bi-chevron-down"></i></label>
+              <ul class="drop-menu">
+                <li><a class="nav-link" href="Az-Business.html"> Business </a></li>
+                <li><a class="nav-link" href="Az-Listings.html"> Listings</a></li>
+                <li><a class="nav-link" href="Az-Hunting .html">ProductHunting</a></li>
+                <li><a class="nav-link" href="Az-Wholesale.html"> Wholesale</a></li>
+                <li><a class="nav-link" href="Az-Label.html">Private Label</a></li>
+                <li><a class="nav-link" href="Az-Sourcing.html">ProductSourcing</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link" href="mission.html">Mission</a></li>
+            <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+          <label for="menu-btn" class="navbarbtn menu-btn"><i class="bi bi-list-nested"></i></label>
+
+        </div>
+      </nav>
+    <div class="main-container">
+        <section class="page-banner-sec ">
+            <div class="bg-banner"></div>
+            <div class="container">
+              <div class="content">
+              <h1 class="main-title text-light" data-aos="zoom-in" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="3000">Services</h1>
+              <nav aria-label="breadcrumb" data-aos="zoom-in" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="3000">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Services</li>
+                </ol>
+              </nav>
+            </div>
+            </div>
+           </section>
+        <section class="services-sec default-sec">
+            <h2 class="main-title title-gradient text-center" data-aos="zoom-in" data-aos-easing="linear"
+              data-aos-duration="2500">Our Services</h2>
+              
+              <div class="container">
+                <div class="content-wrapper">
+                  <div class="slider-container">
+    
+            <ul class="nav nav-pills slider-wrapper " id="pills-tab"
+              role="tablist">
+              <li class="nav-item slider-item" role="presentation">
+                <button class="nav-link btn btn-primary active" id="pills-business-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-business" type="button" role="tab" aria-controls="pills-business"
+                  aria-selected="true">Amazon Business</button>
+              </li>
+              <li class="nav-item slider-item" role="presentation">
+                <button class="nav-link btn btn-primary" id="pills-Listings-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-Listings" type="button" role="tab" aria-controls="pills-Listings"
+                  aria-selected="false">Amazon Listings</button>
+              </li>
+              <li class="nav-item slider-item" role="presentation">
+                <button class="nav-link btn btn-primary" id="pills-Hunting-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-Hunting " type="button" role="tab" aria-controls="pills-Hunting "
+                  aria-selected="false">Product Hunting </button>
+              </li>
+              <li class="nav-item slider-item" role="presentation">
+                <button class="nav-link btn btn-primary" id="pills-Wholesale-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-Wholesale " type="button" role="tab" aria-controls="pills-Wholesale "
+                  aria-selected="false">Wholesale </button>
+              </li>
+              <li class="nav-item slider-item" role="presentation">
+                <button class="nav-link btn btn-primary" id="pills-Label-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-Label" type="button" role="tab" aria-controls="pills-Label"
+                  aria-selected="false">Private Label</button>
+              </li>
+              <li class="nav-item slider-item" role="presentation">
+                <button class="nav-link btn btn-primary" id="pills-Sourcing-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-Sourcing" type="button" role="tab" aria-controls="pills-Sourcing"
+                  aria-selected="false">Product Sourcing</button>
+              </li>
+              <li class="nav-item slider-item" role="presentation">
+                <button class="nav-link btn btn-primary" id="pills-AVAM-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-AVAM" type="button" role="tab" aria-controls="pills-AVAM"
+                  aria-selected="false">Assistant Management</button>
+              </li>
+              <li class="nav-item slider-item" role="presentation">
+                <button class="nav-link btn btn-primary" id="pills-Graphic-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-Graphic" type="button" role="tab" aria-controls="pills-Graphic"
+                  aria-selected="false">Graphic Designing</button>
+              </li>
+              <li class="nav-item slider-item" role="presentation">
+                <button class="nav-link btn btn-primary" id="pills-Printing-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-Printing" type="button" role="tab" aria-controls="pills-Printing"
+                  aria-selected="false">Printing</button>
+              </li>
+              <li class="nav-item slider-item" role="presentation">
+                <button class="nav-link btn btn-primary" id="pills-SynTech-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-SynTech" type="button" role="tab" aria-controls="pills-SynTech"
+                  aria-selected="false">SynTech Institute</button>
+              </li>
+    
+            </ul>
+            </div>
+            <div class="container">
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-business" role="tabpanel"
+                  aria-labelledby="pills-business-tab" tabindex="0">
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-6">
+                      <h2 class="sub-title" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="100">Amazon
+                        Business Set-up</h2>
+                      <p class="text" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="200">GC will let
+                        you know what Amazon is and how it works. All whats and hows will be
+                        covered.</p>
+                      <p class="text" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="300">Unlock the
+                        secrets of Amazon's functionality and offerings with our comprehensive guide. From understanding its
+                        vast marketplace to navigating its innovative services, we've got you covered. Learn the ins and
+                        outs of setting up your Amazon business seamlessly. Let us demystify the 'whats' and 'hows' so you
+                        can harness the full potential of this powerhouse platform.</p>
+                        <a href="Az-Business.html" class="btn btn-secondary rounded-pill" data-aos="fade-right" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="400">Read More</a>
+                    </div>
+                    <div class="col-lg-5 offset-md-1" data-aos="fade-left" data-aos-easing="linear"
+                      data-aos-duration="3000">
+                      <div class="tab-img">
+                        <img
+                          src="https://www.repricer.com/wp-content/uploads/2022/07/dropshipping-amazon-business-model.png"
+                          alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="tab-pane fade" id="pills-Listings" role="tabpanel" aria-labelledby="pills-Listings-tab"
+                  tabindex="0">
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-6">
+                      <div class="content">
+                        <h2 class="sub-title" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="100">Amazon
+                          Listings</h2>
+                        <p class="text" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="200">We provide
+                          details about the product, such as its title, description, features,
+                          pricing, images, and other important information, like reviews, ratings, and customer questions,
+                          to help customers make better purchasing decisions.</p>
+                        <p class="text" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="300">At Global
+                          Commerce, we specialize in fine-tuning your Amazon product search strategy, ensuring you unearth
+                          high-potential products primed for success. Our seasoned experts employ advanced techniques and
+                          market analysis to identify lucrative opportunities that will elevate your business. With our
+                          guidance, you'll confidently navigate the competitive landscape and secure a foothold in the
+                          market. Trust us to equip you with the insights and tools necessary to seize your share of
+                          Amazon's vast marketplace</p>
+                          <a href="Az-Listings.html" class="btn btn-secondary rounded-pill" data-aos="fade-right" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="400">Read More</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 offset-md-1" data-aos="fade-left" data-aos-easing="linear"
+                      data-aos-duration="1500">
+                      <div class="tab-img">
+                        <img
+                          src="https://img.freepik.com/free-vector/catalogue-concept-illustration_114360-3253.jpg?t=st=1708898581~exp=1708902181~hmac=6a6cfa57f0cb6a25e0c4783076969df1377924772936cc21d9aee5e7540fa555&w=740"
+                          alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="tab-pane fade" id="pills-Hunting" role="tabpanel" aria-labelledby="pills-Hunting-tab"
+                  tabindex="0">
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="100">
+                      <div class="content">
+                        <h2 class="sub-title">Product Hunting for Amazon</h2>
+                        <p class="text" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="200">At Global
+                          Commerce, we specialize in fine-tuning your Amazon product search strategy, ensuring you unearth
+                          high-potential products primed for success. Our seasoned experts employ advanced techniques and
+                          market analysis to identify lucrative opportunities that will elevate your business. With our
+                          guidance, you'll confidently navigate the competitive landscape and secure a foothold in the
+                          market. Trust us to equip you with the insights and tools necessary to seize your share of
+                          Amazon's vast marketplace</p>
+                          <a href="Az-Hunting.html" class="btn btn-secondary rounded-pill" data-aos="fade-right" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="400">Read More</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 offset-md-1" data-aos="fade-left" data-aos-easing="linear"
+                      data-aos-duration="1500">
+                      <div class="tab-img">
+                        <img
+                          src="https://legiit-service.s3.amazonaws.com/1426dfc5e1eac0bc4d500b016bffbc68/658c08e330ff0fb27b0d562d207a068b.png"
+                          alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="tab-pane fade" id="pills-Wholesale" role="tabpanel" aria-labelledby="pills-Wholesale-tab"
+                  tabindex="0">
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="100">
+                      <div class="content">
+                        <h2 class="sub-title">FBA Wholesale Services</h2>
+                        <p class="text">From sourcing to shipment, we deal in all aspects you need in FBA wholesale</p>
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis hic rerum
+                          necessitatibus sapiente dolor repellat possimus nisi voluptate itaque iste tempore, repudiandae,
+                          asperiores quia voluptatum fuga optio, ratione praesentium voluptates?</p>
+                          <a href="Az-Wholesale.html" class="btn btn-secondary rounded-pill" data-aos="fade-right" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="400">Read More</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 offset-md-1" data-aos="fade-left" data-aos-easing="linear"
+                      data-aos-duration="1500">
+                      <div class="tab-img">
+                        <img src="https://amzgenesis.com/wp-content/themes/understrap-master/img/private_label.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="tab-pane fade" id="pills-Label" role="tabpanel" aria-labelledby="pills-Label-tab" tabindex="0">
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+                      <div class="content">
+                        <h2 class="sub-title">Private Label</h2>
+                        <p class="text">Looking to start private label selling on Amazon? Ensure you’re prepared for
+                          anything with your Amazon Private Label business with Global Commerce.</p>
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis hic rerum
+                          necessitatibus sapiente dolor repellat possimus nisi voluptate itaque iste tempore, repudiandae,
+                          asperiores quia voluptatum fuga optio, ratione praesentium voluptates?</p>
+                          <a href="Az-Label.html" class="btn btn-secondary rounded-pill" data-aos="fade-right" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="400">Read More</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 offset-md-1" data-aos="fade-left" data-aos-easing="linear"
+                      data-aos-duration="1500">
+                      <div class="tab-img">
+                        <img
+                          src="https://bizistech.com/wp-content/uploads/2023/05/2001.i039.031_branding_isometric_concept_icons-14-Converted-min-optimized.png"
+                          alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="tab-pane fade" id="pills-Sourcing" role="tabpanel" aria-labelledby="pills-Sourcing-tab"
+                  tabindex="0">
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+                      <div class="content">
+                        <h2 class="sub-title">Product Sourcing</h2>
+                        <p class="text">
+                          Our product sourcing strategy grants partners a unique competitive edge by combining top-quality products, competitive pricing, and reliable supply chains, ensuring they stand out in crowded markets with offerings tailored to specific needs. </p>
+                        <p class="text">
+                          Leveraging our extensive industry connections and sourcing expertise, we enable our partners to surpass customer expectations, fueling growth and market success. Our steadfast commitment to sourcing excellence distinguishes our partnerships, offering a significant advantage in the competitive landscape.</p>
+                          <a href="Az-Sourcing.html" class="btn btn-secondary rounded-pill" data-aos="fade-right" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="400">Read More</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 offset-md-1" data-aos="fade-left" data-aos-easing="linear"
+                      data-aos-duration="1500">
+                      <div class="tab-img">
+                        <img
+                          src="https://static.vecteezy.com/system/resources/previews/021/665/936/original/3d-illustration-of-select-and-search-for-online-shopping-items-shopping-online-using-smartphone-online-shopping-concept-and-product-selection-concept-3d-rendering-png.png"
+                          alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="tab-pane fade" id="pills-AVAM" role="tabpanel" aria-labelledby="pills-AVAM-tab" tabindex="0">
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+                      <div class="content">
+                        <h2 class="sub-title">Amazon Virtual Assistant Management (AVAM)</h2>
+                        <p class="text">
+                          Our AVAM (Amazon Virtual Assistant Management) project offers a streamlined solution for businesses seeking trained and adept Virtual Assistants. By utilizing our platform, companies can access a pool of skilled professionals ready to provide comprehensive support for various tasks related to Amazon operations..</p>
+                        <p class="text">Whether it's managing product listings, handling customer inquiries, optimizing advertising campaigns, or monitoring inventory, our Virtual Assistants are equipped with the knowledge and expertise to assist effectively. With AVAM, businesses can delegate routine tasks, freeing up valuable time to focus on core activities and driving growth.</p>
+                        <a href="AVAM.html" class="btn btn-secondary rounded-pill" data-aos="fade-right" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="400">Read More</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 offset-md-1" data-aos="fade-left" data-aos-easing="linear"
+                      data-aos-duration="1500">
+                      <div class="tab-img">
+                        <img src="https://www.xpertva.com/wp-content/uploads/2022/11/Amazon-Virtual-Assistant.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="tab-pane fade" id="pills-Graphic" role="tabpanel" aria-labelledby="pills-Graphic-tab" tabindex="0">
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+                      <div class="content">
+                        <h2 class="sub-title">Graphic</h2>
+                        <p class="text">At Global Commerce, our seasoned experts provide limitless design possibilities. From logos to branding materials and marketing collateral, we cover it all. With a focus on quality and innovation, we aim to exceed your expectations. Trust us to bring your vision to life and elevate your brand</p>
+                          <a href="Graphic.html" class="btn btn-secondary rounded-pill" data-aos="fade-right" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="400">Read More</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 offset-md-1" data-aos="fade-left" data-aos-easing="linear"
+                      data-aos-duration="1500">
+                      <div class="tab-img">
+                        <img src="https://www.xpertva.com/wp-content/uploads/2022/11/Amazon-Virtual-Assistant.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="tab-pane fade" id="pills-Printing" role="tabpanel" aria-labelledby="pills-Printing-tab" tabindex="0">
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+                      <div class="content">
+                        <h2 class="sub-title">Printing</h2>
+                        <p class="text">Hire trained and adept Virtual Assistants from our AVAM project.</p>
+                        <p class="text">
+                          Printing plays a crucial role in various industries, from marketing materials to packaging and documentation. With advancements in technology, modern printing processes offer high-quality outputs with efficiency and precision. Businesses rely on printing services to create tangible representations of their brand identity and communicate effectively with customers.</p>
+                          <a href="Printing.html" class="btn btn-secondary rounded-pill" data-aos="fade-left" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="400">Read More</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 offset-md-1" data-aos="fade-left" data-aos-easing="linear"
+                      data-aos-duration="1500">
+                      <div class="tab-img">
+                        <img src="https://www.xpertva.com/wp-content/uploads/2022/11/Amazon-Virtual-Assistant.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="tab-pane fade" id="pills-SynTech" role="tabpanel" aria-labelledby="pills-SynTech-tab" tabindex="0">
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+                      <div class="content">
+                        <h2 class="sub-title">SynTech Vocational & technical Institute</h2>
+                        <p class="text">SynTech is the Brainchild of Shaikh Yasir to train youth with valid degree program. Registered and recognized with SBTE & STEVTA, SynTech offers 2/3 Years DAE programs in Software Technology, Information Technology, CIT, DBA and D.com. In addition to that freelancing and short IT courses are also our premier courses.</p>
+                          <a href="Institute.html" class="btn btn-secondary rounded-pill" data-aos="fade-left" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="400">Read More</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 offset-md-1" data-aos="fade-left" data-aos-easing="linear"
+                      data-aos-duration="1500">
+                      <div class="tab-img">
+                        <img src="https://www.xpertva.com/wp-content/uploads/2022/11/Amazon-Virtual-Assistant.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+          </section>
+    </div>
+    <footer class="bg-dark text-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 mb-4 mb-md-0 px-4 px-md-0">
+            <div class="logo mb-3">
+              <img src="./assest/media/images/logo.png" alt="">
+            </div>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptates eum
+              voluptatibus, aliquid quisquam sed animi perferendis deleniti cupiditate! Debitis eaque adipisci pariatur.
+              Tempore saepe, deleniti delectus obcaecati temporibus similique!</p>
+          </div>
+          <div class="col-lg-3 mb-4 mb-md-0 px-4 px-md-3">
+            <h2 class="title mb-3">Services</h2>
+            <p><a href="#">Amazon Business Set-up</a> </p>
+            <p><a href="#">Amazon Listings</a> </p>
+            <p><a href="#">Product Hunting for Amazon</a> </p>
+            <p><a href="#">FBA Wholesale Services</a> </p>
+            <p><a href="#">Private Label</a> </p>
+            <p><a href="#">Product Sourcing </a> </p>
+            <p><a href="#">Amazon Virtual Assistant Management </a> </p>
+          </div>
+          <div class="col-lg-4 mb-4 mb-md-0 px-4 px-md-0">
+            <h2 class="title mb-3">Follow</h2>
+            <div class="social-icon">
+              <a href="#"><i class="bi bi-facebook icon"></i></a>
+              <a href="#"><i class="bi bi-whatsapp icon"></i></a>
+              <a href="#"><i class="bi bi-instagram icon"></i></a>
+              <a href="#"><i class="bi bi-linkedin icon"></i></a>
+              <a href="#"><i class="bi bi-tiktok icon"></i></a>
+              <a href="#"><i class="bi bi-snapchat icon"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./assest/js/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="./assest/js/slick.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+  <script src="./assest/js/custom.js"></script>
+</body>
+</html>
